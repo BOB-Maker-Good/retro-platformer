@@ -46,7 +46,7 @@ const worlds=[
 ];
 const bossNames=['King Brutus','Phantom King','Sandfang','Frostbite','Thornback','MECHA-9','Magmagon','The Dark Overlord'];
 const art=new Image();art.src='assets/retro-art.webp';
-const cell=(n)=>[(n%4)*160,Math.floor(n/4)*160,160,160];
+const cell=(n)=>[(n%4)*80,Math.floor(n/4)*80,80,80];
 let mode=null,world=1,level=1,score=0,lives=3,paused=false,won=false,deadTimer=0,cam=0,checkpoint=0,respawn=30;
 let player,enemies=[],items=[],blocks=[],boss=null,shots=[],particles=[],usedPowerups=0,levelWidth=0;
 const input={left:false,right:false,jump:false,jumpQueued:false,use:false,useQueued:false};
